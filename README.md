@@ -1,6 +1,7 @@
 # DZXML_Editor
  DZ types.xml editor
-**Please read further for directions / clarification.**
+
+**Please read further for directions / clarification before usage.**
 ### Introduction
 DZXML Editor is an open-source Python developed simple types.xml modifier for DayZ server owners. I developed this
 application so I didn't have to individually go through each nominal and min value on an xml ever again. Additionally
@@ -17,24 +18,26 @@ executable for Windows using auto-py-to-exe. If your computer is any other opera
 
 **The types files included are in separate files named Livona in Chernarus. Please drag whichever one you are using DIRECTLY to your directory containing the .exe or .py file.**
 
+----------
+
 *I will use the acog scope as a reference here for quite a bit*
 
-*Addition Nominal and Minimum*
+***Addition Nominal and Minimum***
 
 This tool is designed to modify values to precision. So if you choose to add to nominal values, it will simply take the original
 value, so the Acog being 9 for instance, and if you decided to add 5 to each nominal it would simply add 9+5=14. Now your acog
 nominal is 14.
 
-*Multiplication Nominal and Minimum*
+***Multiplication Nominal and Minimum***
 
 The same goes with multiplication: If your input is to multiply by 4, the acog is default at 9: the program will do 9*4=36. Now
 your acog nominal is 36.
 Whatever number you choose for the Nominal **MUST** be higher or equal to the minimum number. I recommend if you add or multiply
 by a certain number that you do -1 or -2 off the min. So if you once again multiplied the file nominal by 4, I would multiply the
 min nominal by 2. *IF* you add or multiply I would go through regardless and check all values to make sure everything looks good and logical. Additionally if you try to multiply over 6, you will be unable to. I set the cutoff to greater or equal to 6 to not work.
-You can read the promptings but when you go through the menu options, you will notice `Multiply or Add Min? (0 = Multiply, 1 = Add)` The parenthesis is telling you type 0 to multiply, and type 1 to add. Afterward it will ask for your value.
+You can read the promptings but when you go through the menu options, you will notice `Multiply or Add Min? (0 = Multiply, 1 = Add)` The parenthesis is telling you type 0 to multiply or type 1 to add - afterward it will ask for your value to either add or multiply.
 
-*Quantmin and Quantmax*
+***Quantmin and Quantmax***
 
 Modifying quantmin / quantmax is easier. The syntax when you type your input is just 0-100 which is in percent. A good example for quantmin and quantmax is ammo stacks or rice: If you want either of those to spawn 10% full at a minimum and only 80% full at a maximum, you would do exactly that: 10 for min and 80 for max. **NOTE** Any value that is set to -1 for quantmin and quantmax as a default is not affected by your input. It will always be -1 unless you manually changed it. Anything that is set to -1 is typically objects that don't have quantity like the acog. Also another **NOTE:** if you are modifying this, make sure your quantmin is less than or equal to the quantmax. Wouldn't make sense to have a quantmin of 80% and a quantmax of 60%.
 
