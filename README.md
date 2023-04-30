@@ -16,7 +16,7 @@ executable for Windows using auto-py-to-exe. If your computer is any other opera
 2. Make sure there is a types.xml file in the directory. (Should be if you just downloaded it.)
 3. Double click the DZXML.py file, it will run the same way as the .exe file would.
 
-**The types files included are in separate files named Livona in Chernarus. Please drag whichever one you are using DIRECTLY to your directory containing the .exe or .py file.**
+**The types files included are in separate folders named Livona and Chernarus. Please drag whichever one you are using DIRECTLY to your directory containing the .exe or .py file.**
 
 ----------
 
@@ -41,10 +41,14 @@ You can read the promptings but when you go through the menu options, you will n
 
 Modifying quantmin / quantmax is easier. The syntax when you type your input is just 0-100 which is in percent. A good example for quantmin and quantmax is ammo stacks or rice: If you want either of those to spawn 10% full at a minimum and only 80% full at a maximum, you would do exactly that: 10 for min and 80 for max. **NOTE** Any value that is set to -1 for quantmin and quantmax as a default is not affected by your input. It will always be -1 unless you manually changed it. Anything that is set to -1 is typically objects that don't have quantity like the acog. Also another **NOTE:** if you are modifying this, make sure your quantmin is less than or equal to the quantmax. Wouldn't make sense to have a quantmin of 80% and a quantmax of 60%.
 
+
 The reason as to why I built the .exe and included the source code is for:
-- Open-source software can be editted by others.
+- Open-source software can be edited by others.
 - To show the source code.
 - .exe doesn't require Python to be installed as it is interpretted.
+If you are interesting in editing the program, please read at the very bottom for dev documentation.
+
+---
 
 ### Words of Advice
 I assume if you're using this tool you are a veteran to server running, if you are not that is fine too. This message is
@@ -58,4 +62,10 @@ limit to around 1000 total items spawning on the map, if you modify your items t
 - [ ] Try to get an icon for the .exe so it doesn't look so sketch
 - [ ] Maybe make the multiplier able to multiply only up to 5x including decimal points but rounds to a whole number for the types.xml
 - [ ] Build as .exe and include a blank types.xml in a zip with the github code as well.
-- [ X ] Write documentation including docstrings for the functions just in-case?
+- [X] Write documentation including docstrings for the functions just in-case?
+
+### Changelogs
+This section will be updated with changes after initial release if necessary. This will primarily be used for major bugs fixed if any exist, or any requests are made to add. If I decide to make any other .xml modifiers for DayZ I will merge all projects into one super application that will allow you to modify different xmls.
+
+### Developer Documentation
+If you are planning on taking the source code to develop on your own, please read this.
