@@ -1,6 +1,6 @@
 # DZXML_Editor
-===
- DZ types.xml editor
+
+DZ types.xml editor
 
 **Please read further for directions / clarification before usage.**
 
