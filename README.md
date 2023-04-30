@@ -1,11 +1,18 @@
 # DZXML_Editor
+===
  DZ types.xml editor
 
 **Please read further for directions / clarification before usage.**
+
+---
+
 ### Introduction
 DZXML Editor is an open-source Python developed simple types.xml modifier for DayZ server owners. I developed this
 application so I didn't have to individually go through each nominal and min value on an xml ever again. Additionally
 I don't like dealing with corrupted files from the web based editor.
+
+---
+
 ### Documentation
 
 The easiest way to use this tool is to run the .exe file that comes in the package. Make sure you have a types.xml file
@@ -56,16 +63,22 @@ directed to all categories. I advise if you're going to multiply your nominal or
 If you do, I **HIGHLY** recommend going through common items and reducing the nominal / min count. Xbox and Playstation both
 limit to around 1000 total items spawning on the map, if you modify your items too much, you will lose out on a LOT of loot.
 
+---
+
 ### TODOs
-- [ ] Clean up user dialogue.
-- [ ] Make a check work for min - nominal
-- [ ] Try to get an icon for the .exe so it doesn't look so sketch
-- [ ] Maybe make the multiplier able to multiply only up to 5x including decimal points but rounds to a whole number for the types.xml
-- [ ] Build as .exe and include a blank types.xml in a zip with the github code as well.
-- [X] Write documentation including docstrings for the functions just in-case?
+- Clean up user dialogue.
+- Make a check work for min - nominal
+- Try to get an icon for the .exe so it doesn't look so sketch
+- Maybe make the multiplier able to multiply only up to 5x including decimal points but rounds to a whole number for the types.xml
+- Build as .exe and include a blank types.xml in a zip with the github code as well.
+- ~~Write documentation including docstrings for the functions just in-case?~~
+
+---
 
 ### Changelogs
 This section will be updated with changes after initial release if necessary. This will primarily be used for major bugs fixed if any exist, or any requests are made to add. If I decide to make any other .xml modifiers for DayZ I will merge all projects into one super application that will allow you to modify different xmls.
+
+---
 
 ### Developer Documentation
 If you are planning on taking the source code to develop on your own, please read this.
