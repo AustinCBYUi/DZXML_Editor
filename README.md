@@ -1,4 +1,4 @@
-# DZXML_Editor ![Editor Status](https://img.shields.io/badge/Editor-Passing-brightgreen)
+# DZXML_Editor ![Editor Status](https://img.shields.io/badge/Editor-Passing-brightgreen) ![Software Status](https://img.shields.io/badge/Editor-WIP-yellow)
 
 DZ types.xml editor
 
