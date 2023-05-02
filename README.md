@@ -1,4 +1,4 @@
-# DZXML_Editor ![AppVeyor](https://img.shields.io/appveyor/build/AustinCBYUi/DZXML_Editor?color=Black&label=Build&logo=Passing&logoColor=Green)
+# DZXML_Editor ![Deploy Status](https://github.com/AustinCBYUi/DZXML_Editor/actions/workflows/deploy.yml/badge.svg)
 
 DZ types.xml editor
 
