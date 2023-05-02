@@ -13,6 +13,7 @@ from pathlib import *
 #Discord - Danny2#5070
 
 
+#TODO Remember to switch this for .exe build / public build
 # file_to_edit = PurePath("types.xml")
 file_to_edit = Path(r"Projects\DZXML_Editor\types.xml") #Dev
 
@@ -54,7 +55,7 @@ def nominal_multiplication_modifier(change_value):
         #Multiply whatever user input is in the input
         nominal.text = str(int(nominal.text) * change_value)
         #TODO Trying to work on getting this to work with decimals, so I could do 1.5x, but guess I could just use addition..?
-        if nominal == float:
+        if nominal.text == float:
             nominal.text = round(nominal.text)
             nominal.text = (str(int(nominal.text)))
     print(MSG)
@@ -80,15 +81,20 @@ def minimum_selection():
     """Min selection menu for editing min values in xml."""
     multiply_or_add = int(input("\033[0;35;48mMultiply or Add Min? (0 = Multiply, 1 = Add):\n"))
     if multiply_or_add == 0:
-        change_value = float(input("\033[0;36;48mHow much to multiply each min value by? Use integers:\n"))
+        change_value = int(input("\033[0;36;48mHow much to multiply each min value by? Use integers:\n"))
         #minimum_multiplication_modifier(change_value)
         #Check if you're doing too much..
         if change_value >= 6:
             print("\033[0;31;48m Integer is too large. Please try a smaller number.")
             #If you are, try again.
             minimum_selection()
+            #No idea how this got missed? It was here before! Edit: I see why now, I commented it out like a goon
+        #If you're not trying to do too much..
+        else:
+            #Run the function
+            minimum_multiplication_modifier(change_value)
     elif multiply_or_add == 1:
-        change_value = float(input("\033[0;36;48mHow much to add to each min value? Use integers:\n"))
+        change_value = int(input("\033[0;36;48mHow much to add to each min value? Use integers:\n"))
         minimum_addition_modifier(change_value)
 
 
@@ -158,17 +164,20 @@ def quantmax_modifier():
 
 
 #Need to get this working.
-# def minimum_check():
-#     minimum_text = str(int(minimum.text))
-#     maximum_text = str(int(maximum.text))
-#     nominal_root = root.iter("nominal") #Grabs current nominal root
-#     nominal_value = str(int(nominal_value.text)) #Current value
-#     minimum_root = root.iter("min") #Grabs current min value
-#     minimum_value = str(int(minimum_value.text))
-#     for min in root.iter("min"):
-#         if minimum_value > nominal_value:
-
-#     print(nominal_value)
+#It is working, but needs some polishing.
+def minimum_check():
+    """Check the minimum value to the nominal value. If min is greater than nominal, 
+    switch bool to True as it is a corrupted file. Otherwise default = False."""
+    corrupted_file = False
+    for min in root.iter("min"):
+        min.text = str(int(min.text))
+    for nom in root.iter("nominal"):
+        nom.text = (str(int(nom.text)))
+    if min.text > nom.text:
+        corrupted_file = True
+    else:
+        corrupted_file = False
+    return corrupted_file
 
 #TODO List:
 #  1 - Clean up user dialogue.
@@ -211,6 +220,12 @@ while menu_stop == False:
         quantmax_modifier()
         #TODO Get the program to write file to same path as exe
     elif user_selected == 0:
-        tree.write("types_modified.xml")
-        menu_stop = True
-        exit()
+        minimum_check()
+        if minimum_check() == False:
+            tree.write("types_modified.xml")
+            menu_stop = True
+            exit()
+        elif minimum_check() == True:
+            print("\033[0;31;48mError. Your min values are higher than nominals. Please retry with a lower min.")
+            print("\033[0;31;48mYour progress was not saved.")
+            menu_stop = True

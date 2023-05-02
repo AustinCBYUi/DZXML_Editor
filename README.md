@@ -67,7 +67,7 @@ limit to around 1000 total items spawning on the map, if you modify your items t
 
 ### TODOs
 - Clean up user dialogue.
-- Make a check work for min - nominal
+- ~~Make a check work for min - nominal~~
 - Try to get an icon for the .exe so it doesn't look so sketch
 - Maybe make the multiplier able to multiply only up to 5x including decimal points but rounds to a whole number for the types.xml
 - Build as .exe and include a blank types.xml in a zip with the github code as well.
