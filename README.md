@@ -1,4 +1,4 @@
-# DZXML_Editor [![.github/workflows/main.yml](https://github.com/AustinCBYUi/DZXML_Editor/actions/workflows/main.yml/badge.svg?branch=main&event=deployment_status)](https://github.com/AustinCBYUi/DZXML_Editor/actions/workflows/main.yml)
+# DZXML_Editor [![Editor](https://github.com/AustinCBYUi/DZXML_Editor/actions/workflows/main.yml/badge.svg?branch=main&event=deployment_status)](https://github.com/AustinCBYUi/DZXML_Editor/actions/workflows/main.yml)
 
 DZ types.xml editor
 
