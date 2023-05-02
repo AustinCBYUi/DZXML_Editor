@@ -1,4 +1,4 @@
-# DZXML_Editor
+# DZXML_Editor !(https://github.com/AustinCBYUi/DZXML_Editor/dzxml.py/badge.svg)
 
 DZ types.xml editor
 
