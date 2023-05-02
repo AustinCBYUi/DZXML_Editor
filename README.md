@@ -1,4 +1,4 @@
-# DZXML_Editor ![editor_workflow](https://github.com/AustinCBYUi/DZXML_Editor/dzxml.py/badge.svg)
+# DZXML_Editor ![AppVeyor](https://img.shields.io/appveyor/build/AustinCBYUi/DZXML_Editor?color=Black&label=Build&logo=Passing&logoColor=Green)
 
 DZ types.xml editor
 
