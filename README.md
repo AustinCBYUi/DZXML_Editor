@@ -1,6 +1,6 @@
 # DZXML_Editor ![Editor Status](https://img.shields.io/badge/Editor-Passing-brightgreen) ![Software Status](https://img.shields.io/badge/Software-WIP-yellow)
 
-DZ types.xml editor
+DZ types.xml editor. This program is console / prompt based, no GUI as of yet.
 
 **Please read further for directions / clarification before usage.**
 
