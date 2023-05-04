@@ -1,5 +1,6 @@
 # import xml_auto_editor as xml
 import xml.etree.ElementTree as ET
+# from pathlib import *
 from pathlib import *
 
 #Author - Austin Campbell || Released on my school github acc.
@@ -14,8 +15,8 @@ from pathlib import *
 
 
 #TODO Remember to switch this for .exe build / public build
-# file_to_edit = PurePath("types.xml")
-file_to_edit = Path(r"Projects\DZXML_Editor\types.xml") #Dev
+file_to_edit = PurePath("types.xml")
+#file_to_edit = Path(r"Projects\DZXML_Editor\types.xml") #Dev
 
 #Primary tree and root to be edited.
 tree = ET.parse(file_to_edit)
