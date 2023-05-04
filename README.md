@@ -84,7 +84,7 @@ limit to around 1000 total items spawning on the map, if you modify your items t
 
 ### Changelogs
 This section will be updated with changes after initial release if necessary. This will primarily be used for major bugs fixed if any exist, or any requests are made to add. If I decide to make any other .xml modifiers for DayZ I will merge all projects into one super application that will allow you to modify different xmls.
-Current version = v1.0. (1.0=public release and up to my standards)
+Current version = v1.0! (1.0=public release and up to my standards)
 
 ---
 
