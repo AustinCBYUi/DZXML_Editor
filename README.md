@@ -39,7 +39,7 @@ executable for Windows using auto-py-to-exe. If your computer is any other opera
 
 This tool is designed to modify values to precision. So if you choose to add to nominal values, it will simply take the original
 value, so the Acog being 9 for instance, and if you decided to add 5 to each nominal it would simply add 9+5=14. Now your acog
-nominal is 14.
+nominal is 14..
 
 ***Multiplication Nominal and Minimum***
 
