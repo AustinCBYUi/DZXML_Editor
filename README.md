@@ -1,6 +1,6 @@
 # DZXML_Editor ![Editor Status](https://img.shields.io/badge/Editor-Passing-brightgreen) ![Software Status](https://img.shields.io/badge/Software-WIP-yellow)
 
-DZ types.xml editor
+DZ types.xml editor. This program is console / prompt based, no GUI as of yet.
 
 **Please read further for directions / clarification before usage.**
 
@@ -9,7 +9,9 @@ DZ types.xml editor
 ### Introduction
 DZXML Editor is an open-source Python developed simple types.xml modifier for DayZ server owners. I developed this
 application so I didn't have to individually go through each nominal and min value on an xml ever again. Additionally
-I don't like dealing with corrupted files from the web based editor.
+I don't like dealing with corrupted files from the web based editor. Aside from that it is just a project for fun for me to advance my skills and hopefully aid me in getting a software job in the future. That is the reason the program is so heavily commented as well, I try to keep as many comments in as possible so the process can be understood, and for my future self if I ever need to re-read.
+
+I will do my absolute best to keep the types.xml files updated, but I think after 1.20 update you will have to use your own types.xml file as I don't plan to update them forever. Thank you in advance and I hope the tool serves you well! If there is any problems at all please let me know!
 
 ---
 
@@ -41,8 +43,8 @@ The same goes with multiplication: If your input is to multiply by 4, the acog i
 your acog nominal is 36.
 Whatever number you choose for the Nominal **MUST** be higher or equal to the minimum number. I recommend if you add or multiply
 by a certain number that you do -1 or -2 off the min. So if you once again multiplied the file nominal by 4, I would multiply the
-min nominal by 2. *IF* you add or multiply I would go through regardless and check all values to make sure everything looks good and logical. Additionally if you try to multiply over 6, you will be unable to. I set the cutoff to greater or equal to 6 to not work.
-You can read the promptings but when you go through the menu options, you will notice `Multiply or Add Min? (0 = Multiply, 1 = Add)` The parenthesis is telling you type 0 to multiply or type 1 to add - afterward it will ask for your value to either add or multiply.
+min value by 2. *IF* you add or multiply your values I would go through regardless and check all values to make sure everything looks good and logical. Additionally if you try to multiply over 6, you will be unable to. I set the cutoff to greater or equal to 6 to not work.
+You can read the promptings but when you go through the menu options, you will notice `Multiply or Add Min? (0 = Multiply, 1 = Add)` The parenthesis is telling you type 0 to multiply or type 1 to add - afterward it will ask for your value to either add or multiply based off what you chose and it will edit the file that way.
 
 ***Quantmin and Quantmax***
 
@@ -78,6 +80,7 @@ limit to around 1000 total items spawning on the map, if you modify your items t
 
 ### Changelogs
 This section will be updated with changes after initial release if necessary. This will primarily be used for major bugs fixed if any exist, or any requests are made to add. If I decide to make any other .xml modifiers for DayZ I will merge all projects into one super application that will allow you to modify different xmls.
+Current version = v0.95. (1.0=public release and up to my standards)
 
 ---
 
