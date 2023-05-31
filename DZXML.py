@@ -1,7 +1,9 @@
 # import xml_auto_editor as xml
+import dzmessages as dzm
 import xml.etree.ElementTree as ET
 # from pathlib import *
 from pathlib import *
+
 
 #Author - Austin Campbell || Released on my school github acc.
 #Purpose - Automate types.xml editing without screwing up loot tables / exponential nominal / min values.
@@ -15,8 +17,8 @@ from pathlib import *
 
 
 #TODO Remember to switch this for .exe build / public build
-file_to_edit = PurePath("types.xml")
-#file_to_edit = Path(r"Projects\DZXML_Editor\types.xml") #Dev
+# file_to_edit = PurePath("types.xml")
+file_to_edit = Path(r"Projects\DZXML_Editor\types.xml") #Dev
 
 #Primary tree and root to be edited.
 tree = ET.parse(file_to_edit)
@@ -309,6 +311,7 @@ while menu_stop == False:
     2) Modify Minimum Values
     3) Modify Quantity Minimum Values
     4) Modify Quantity Maximum Values
+    5) Messages XML Creator
     0) Exit and write to new file"""
     #Print out the options menu now
     print(options_menu)
@@ -349,6 +352,9 @@ while menu_stop == False:
             print("\033[0;31;48mYour progress was not saved.")
             #stop the loop and get the user to try again.
             menu_stop = True
+    #Messages xml creator
+    elif user_selected == "5" or user_selected == 5:
+        dzm.main()
     #And anything else is a non option error
     else:
         print(NON_OPT_MSG)
