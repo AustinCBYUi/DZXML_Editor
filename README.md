@@ -30,8 +30,13 @@ executable for Windows using auto-py-to-exe. If your computer is any other opera
 2. Make sure there is a types.xml file in the directory in the same place as the ui.py. (Should be if you just downloaded it.)
 3. With the src folder open, right click in the open window and select "Open in Terminal".
 ![alt text](https://github.com/AustinCBYUi/DZXML_editor/blob/main/src/bin/piccer1.png?raw=true)
-5. Type "python ui.py". This will run the program with console in the background.
-6. Use the UI to modify your values. Once you submit, it will dump your new file to the 'bin' folder
+
+4. Type "python ui.py". This will run the program with console in the background.
+
+![alt text](https://github.com/AustinCBYUi/DZXML_editor/blob/main/src/bin/pic2.png?raw=true)
+5. Use the UI to modify your values. Once you submit, it will dump your new file to the 'bin' folder
+
+![alt text](https://github.com/AustinCBYUi/DZXML_editor/blob/main/src/bin/pic3.png?raw=true)
 
 **The types files included are in separate folders named Livona and Chernarus. Please drag whichever one you are using DIRECTLY to your directory containing the .exe or .py file.**
 
