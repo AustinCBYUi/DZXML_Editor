@@ -1,6 +1,6 @@
 # DZXML_Editor ![Editor Status](https://img.shields.io/badge/Editor-Passing-brightgreen) ![Software Status](https://img.shields.io/badge/Software-WIP-yellow)
 
-DZ types.xml editor. This program is console / prompt based, no GUI as of yet.
+DZ types.xml editor. This program is now a UI based software.
 
 **Please read further for directions / clarification before usage.**
 
@@ -25,9 +25,13 @@ The easiest way to use this tool is to run the .exe file that comes in the packa
 in the same directory as the .exe or it will not run the program. The application is written in Python and compiled to the
 executable for Windows using auto-py-to-exe. If your computer is any other operating system or you are skeptic you will have to:
 
+**Updated**
 1. Download the most recent python at https://www.python.org/downloads/
-2. Make sure there is a types.xml file in the directory. (Should be if you just downloaded it.)
-3. Double click the DZXML.py file, it will run the same way as the .exe file would.
+2. Make sure there is a types.xml file in the directory in the same place as the ui.py. (Should be if you just downloaded it.)
+3. With the src folder open, right click in the open window and select "Open in Terminal".
+![alt text](https://github.com/AustinCBYUi/DZXML_editor/bin/main/piccer1.png?raw=true)
+5. Type "python ui.py". This will run the program with console in the background.
+6. Use the UI to modify your values. Once you submit, it will dump your new file to the 'bin' folder
 
 **The types files included are in separate folders named Livona and Chernarus. Please drag whichever one you are using DIRECTLY to your directory containing the .exe or .py file.**
 
@@ -71,20 +75,23 @@ limit to around 1000 total items spawning on the map, if you modify your items t
 
 ---
 
-### TODOs
-- ~~Clean up user dialogue.~~ >> Almost there
-- ~~Make a check work for min - nominal~~
-- ~~Try to get an icon for the .exe so it doesn't look so sketch~~
-- ~~Maybe make the multiplier able to multiply only up to 5x including decimal points but rounds to a whole number for the types.xml~~
-- ~~Build as .exe and include a blank types.xml in a zip with the github code as well.~~
-- ~~Write documentation including docstrings for the functions just in-case?~~
-- ~~Function to check min to nominal to make sure file does not corrupt.~~
+### TODOs for 2.0
+- Add dzmessages.py to app.
+- Work on continuing developer suite tools.
+- Re-write DZXML.py as a class, and remove the 'selection' functions.
+- Work on better user-feedback from UI.
+- Move Success / Failure task label down below button so it doesn't expand window.
 
 ---
 
 ### Changelogs
 This section will be updated with changes after initial release if necessary. This will primarily be used for major bugs fixed if any exist, or any requests are made to add. If I decide to make any other .xml modifiers for DayZ I will merge all projects into one super application that will allow you to modify different xmls.
-Current version = v1.0! (1.0=public release and up to my standards)
+Current version = v2.0! (1.0=public release and up to my standards)
+- Refactored all files. 'src' is now the main source, with children named bin and types.
+- Bin is the dump for both messages.xml and types.xml (namely types_modified.xml).
+- Modified the pathing inside DZXML.py (main), this should work with console to run the application, and in IDEs.
+- Built a small graphical user interface for the application. Consoles aren't fun.
+- Removed most print statements / input statements from DZXML.py as we no longer utilize the console.
 
 ---
 
