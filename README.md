@@ -17,6 +17,8 @@ I don't like dealing with corrupted files from the web based editor. Aside from 
 
 I will do my absolute best to keep the types.xml files updated, but I think after 1.20 update you will have to use your own types.xml file as I don't plan to update them forever. Thank you in advance and I hope the tool serves you well! If there is any problems at all please let me know!
 
+# Version 2.0 will be released as a separate project written in C# using the .NET framework.
+
 ---
 
 ### Documentation
