@@ -2,6 +2,8 @@
 
 DZ types.xml editor. This program is now a UI based software.
 
+**Discontinued in Python**
+
 **Please read further for directions / clarification before usage.**
 
 Contact Info:
